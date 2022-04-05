@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crud</title>
+    <link rel="stylesheet" href="../Crud/Css/style.css">
+</head>
+<body>
+<h1><center>Transaksi</center></h1>
+    <hr>
+    <div class="employee-form">
+      <form onsubmit="event.preventDefault();onFormSubmit();"autocomplete="off">
+        <div>
+          <label>ID Transaksi</label>
+          <label class="validation-error hide" id="fullNameValidationError"></label>
+          <input type="text" name="fullName" id="fullName" />
+        </div>
+        <div>
+          <label>ID Pelanggan</label>
+          <input type="text" name="email" id="email" />
+        </div>
+        <div>
+          <label>Tanggal</label>
+          <input type="date" name="salary" id="salary" />
+        </div>
+        <div>
+          <label>Total</label>
+          <input type="number" name="city" id="city" />
+        </div>
+        <div>
+          <label>Bayar</label>
+          <input type="number" name="obt" id="obt" />
+        </div>
+        <div>
+          <label>Kembalian</label>
+          <input type="number" name="th" id="th" />
+        </div>
+        <div class="form-action-buttons">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <br />
+    <div class="employees-table">
+      <table class="list" id="employeeList">
+        <thead>
+          <tr>
+            <th>ID Transaksi</th>
+            <th>ID Pelanggan</th>
+            <th>Tanggal</th>
+            <th>Total</th>
+            <th>Bayar</th>
+            <th>Kembalian</th>
+            <th>Opsi</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="../Crud/JavaScript/script4.js"></script>
+  </body>
+</html>

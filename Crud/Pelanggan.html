@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crud</title>
+    <link rel="stylesheet" href="../Crud/Css/style.css">
+</head>
+
+<body>
+
+	<h1><center>Apotek Gak Punya Obat</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nama</label><label class="validation-error hide" id="Nama Eror">Isi Formulir Nya !</label>
+                        <input type="text" name="Nama" id="Nama">
+                    </div>
+                    <div>
+                        <label>Umur</label>
+                        <input type="number" name="Umur" id="Umur">
+                    </div>
+                    <div>
+                        <label>Obat</label>
+                        <input type="text" name="Obat" id="Obat">
+                    </div>
+                    <div>
+                        <label>Alamat</label>
+                        <input type="text" name="Alamat" id="Alamat">
+                    </div>
+                    <div>
+                        <label>Jenis Kelamin</label>
+                        <input type="text" name="Jk" id="Jk">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Umur</th>
+                            <th>Obat</th>
+                            <th>Alamat</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Opsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="../Crud/JavaScript/script2.js"></script>
+</body>
+</html>

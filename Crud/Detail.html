@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crud</title>
+    <link rel="stylesheet" href="../Crud/Css/style.css">
+  </head>
+  <body>
+    <h1><center>Penjualan</center></h1>
+    <hr>
+    <div class="employee-form">
+      <form onsubmit="event.preventDefault();onFormSubmit();"autocomplete="off">
+        <div>
+          <label>ID</label>
+          <input type="number" name="a" id="a">
+        </div>
+        <div>
+          <label>ID Transaksi</label>
+          <input type="number" name="b" id="b">
+        </div>
+        <div>
+          <label>Nama Obat</label>
+          <input type="text" name="c" id="c">
+        </div>
+        <div>
+          <label>Jumlah Obat</label>
+          <input type="number" name="d" id="d">
+        </div>
+        <div>
+          <label>Harga Obat</label>
+          <input type="number" name="e" id="e">
+        </div>
+        <div>
+          <label>Total Harga</label>
+          <input type="number" name="f" id="f">
+        </div>
+        <div class="form-action-buttons">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <br />
+    <div class="employees-table">
+      <table class="list" id="employeeList">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>ID Transaksi</th>
+            <th>Nama Obat</th>
+            <th>Jumlah Obat</th>
+            <th>Harga obat</th>
+            <th>Total Harga</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="../Crud/JavaScript/script3.js"></script>
+  </body>
+</html>
